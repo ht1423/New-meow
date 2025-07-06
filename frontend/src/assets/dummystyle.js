@@ -26,7 +26,7 @@ mobileMenu: "md:hidden bg-black/90 backdrop-blur-lg w-full fixed top-16 left-0 r
   mobileUserInfo: "flex flex-col gap-4 py-2",
 mobileUserWelcome: "text-pink-200 font-medium text-center py-2 text-base sm:text-lg",
   mobileDashboardButton: "w-full px-6 py-3 bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-bold rounded-xl hover:shadow-lg hover:shadow-pink-700/40 transition-all",
-mobileAuthButton: "w-full px-6 py-3 bg-gradient-to-r from-rose-500 to-pink-600 text-white font-bold rounded-xl hover:shadow-lg hover:shadow-rose-200/50 transition-all",
+
   // Main content
   main: "pt-[72px]",
 
@@ -433,7 +433,7 @@ export const modalStyles = {
 export const infoStyles = {
   // Progress
   progressWrapper: "w-20 h-2 rounded-full bg-gray-200",
-  progressBar: color => `h-full rounded-full transition-all`,
+  progressBar: () => `h-full rounded-full transition-all`,
 
   // ActionLink
   actionWrapper: "flex items-center gap-3",
@@ -444,7 +444,7 @@ export const infoStyles = {
   certContainer: "mb-4",
   certTitle: "text-base font-semibold text-gray-900",
   certRow: "flex items-center gap-2 mt-1",
-  certYear: bgColor => `text-xs font-bold text-white px-3 py-1 rounded-lg`,
+  certYear: () => `text-xs font-bold text-white px-3 py-1 rounded-lg`,
   certIssuer: "text-sm text-gray-600 font-medium",
 
   // ContactInfo
@@ -483,6 +483,6 @@ export const infoStyles = {
   workHeader: "flex items-start justify-between mb-2",
   workCompany: "text-base font-semibold pb-2 text-gray-900",
   workRole: "text-base font-medium text-gray-700",
-  workDuration: color => `text-sm font-bold italic`,
+  workDuration: () => `text-sm font-bold italic`,
   workDesc: "text-sm text-gray-600 font-medium leading-relaxed"
 };

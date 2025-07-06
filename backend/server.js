@@ -15,8 +15,8 @@ const app = express();
 const PORT = 3001;
 
 app.use(cors({
-    origin: 'http://localhost:5173', 
-    credentials:true
+    origin: 'https://new-meow.vercel.app', 
+    credentials: true
 }))
 
 //CONNECT Data base DB
@@ -31,7 +31,7 @@ app.use(
     '/uploads',
     express.static(path.join(__dirname, 'uploads'), {
         setHeaders: (res, _path) => {
-            res.set('Access-Control-Allow-Origin','http://localhost:5173')
+            res.set('Access-Control-Allow-Origin','https://new-meow.vercel.app')
         }
     })
 )

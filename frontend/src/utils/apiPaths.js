@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://localhost:3001'
+export const BASE_URL = 'https://new-meow.onrender.com'
 
 //ROUTES USED FOR FRONTEND
 export const API_PATHS = {
